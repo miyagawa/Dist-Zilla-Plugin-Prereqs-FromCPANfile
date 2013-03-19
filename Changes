@@ -1,4 +1,7 @@
 Revision history for Perl extension Dist::Zilla::Plugin::Prereqs::FromCPANfile
 
+0.02  Tue Mar 19 16:30:43 PDT 2013
+        - Silent log when there's no cpanfile
+
 0.01  Tue Mar 19 14:27:58 2013
         - original version
