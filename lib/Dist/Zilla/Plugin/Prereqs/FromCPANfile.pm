@@ -61,8 +61,8 @@ to read I<cpanfile> to determine prerequisites for your distribution. This
 does the B<opposite of> what L<Dist::Zilla::Plugin::CPANFile> does, which
 is to I<create> a C<cpanfile> using the prereqs collected elsewhere.
 
-B<DO NOT USE THIS PLUGIN IN COMBINATION WITH Plugin::CPANFile>. I'm
-sure there will be a disaster if you do.
+B<DO NOT USE THIS PLUGIN IN COMBINATION WITH Plugin::CPANFile>. You will
+probably be complained about creating duplicate files from dzil.
 
 =head1 AUTHOR
 
