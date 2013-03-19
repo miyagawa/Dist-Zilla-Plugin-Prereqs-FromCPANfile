@@ -11,10 +11,7 @@ with 'Dist::Zilla::Role::PrereqSource';
 sub register_prereqs {
     my $self = shift;
 
-    unless (-e 'cpanfile') {
-        $self->log("'cpanfile' is not found in your distribution");
-        return;
-    }
+    return unless -e 'cpanfile';
 
     try {
         $self->log("Parsing 'cpanfile' to extract prereqs");
