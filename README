@@ -1,0 +1,20 @@
+NAME
+    Dist::Zilla::Plugin::Prereqs::FromCPANfile -
+
+SYNOPSIS
+      use Dist::Zilla::Plugin::Prereqs::FromCPANfile;
+
+DESCRIPTION
+    Dist::Zilla::Plugin::Prereqs::FromCPANfile is
+
+AUTHOR
+    Tatsuhiko Miyagawa <miyagawa@bulknews.net>
+
+COPYRIGHT
+    Copyright 2013- Tatsuhiko Miyagawa
+
+LICENSE
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+SEE ALSO

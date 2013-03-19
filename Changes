@@ -1,0 +1,4 @@
+Revision history for Perl extension Dist::Zilla::Plugin::Prereqs::FromCPANfile
+
+0.01  Tue Mar 19 14:27:58 2013
+        - original version
