@@ -1,11 +1,18 @@
 NAME
-    Dist::Zilla::Plugin::Prereqs::FromCPANfile -
+    Dist::Zilla::Plugin::Prereqs::FromCPANfile - Parse cpanfile for prereqs
 
 SYNOPSIS
-      use Dist::Zilla::Plugin::Prereqs::FromCPANfile;
+      # dist.ini
+      [Prereqs::FromCPANfile]
 
 DESCRIPTION
-    Dist::Zilla::Plugin::Prereqs::FromCPANfile is
+    Dist::Zilla::Plugin::Prereqs::FromCPANfile is a Dist::Zilla plugin to
+    read *cpanfile* to determine prerequisites for your distribution. This
+    does the opposite of what Dist::Zilla::Plugin::CPANFile does, which is
+    to *create* a "cpanfile" using the prereqs collected elsewhere.
+
+    DO NOT USE THIS PLUGIN IN COMBINATION WITH Plugin::CPANFile. I'm sure
+    there will be a disaster if you do.
 
 AUTHOR
     Tatsuhiko Miyagawa <miyagawa@bulknews.net>
@@ -18,3 +25,5 @@ LICENSE
     under the same terms as Perl itself.
 
 SEE ALSO
+    Module::CPANfile
+
