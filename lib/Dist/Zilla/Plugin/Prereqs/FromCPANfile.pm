@@ -1,7 +1,7 @@
 package Dist::Zilla::Plugin::Prereqs::FromCPANfile;
 
 use strict;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Module::CPANfile;
 use Try::Tiny;
