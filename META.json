@@ -23,6 +23,18 @@
          "requires" : {
             "Test::Pod" : "1.41"
          }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dist::Zilla" : "4",
+            "Module::CPANfile" : "0.901",
+            "Try::Tiny" : "0.1"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0.88"
+         }
       }
    },
    "release_status" : "stable",
@@ -37,6 +49,6 @@
          "web" : "https://github.com/miyagawa/Dist-Zilla-Plugin-Prereqs-FromCPANfile"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 
