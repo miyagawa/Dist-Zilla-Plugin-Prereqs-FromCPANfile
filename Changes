@@ -1,5 +1,8 @@
 Revision history for Perl extension Dist::Zilla::Plugin::Prereqs::FromCPANfile
 
+{{$NEXT}}
+        - dzilifying this as a dogfood experiment
+
 0.02  Tue Mar 19 16:30:43 PDT 2013
         - Silent log when there's no cpanfile
 
