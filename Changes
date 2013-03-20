@@ -1,6 +1,8 @@
 Revision history for Perl extension Dist::Zilla::Plugin::Prereqs::FromCPANfile
 
 {{$NEXT}}
+
+0.03      2013-03-19 21:15:12 America/Los_Angeles
         - dzilifying this as a dogfood experiment
 
 0.02  Tue Mar 19 16:30:43 PDT 2013
