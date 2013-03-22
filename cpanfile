@@ -1,3 +1,4 @@
+requires 'perl', '5.008001';
 requires 'Module::CPANfile', 0.9010;
 requires 'Dist::Zilla', 4;
 requires 'Try::Tiny', 0.10;

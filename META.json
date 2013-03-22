@@ -28,7 +28,8 @@
          "requires" : {
             "Dist::Zilla" : "4",
             "Module::CPANfile" : "0.901",
-            "Try::Tiny" : "0.1"
+            "Try::Tiny" : "0.1",
+            "perl" : "5.008001"
          }
       },
       "test" : {
