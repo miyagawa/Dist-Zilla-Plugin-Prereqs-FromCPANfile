@@ -26,7 +26,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Dist::Zilla" : "4",
+            "Dist::Zilla" : "4.200002",
             "Module::CPANfile" : "0.901",
             "Try::Tiny" : "0.1",
             "perl" : "5.008001"
@@ -50,6 +50,6 @@
          "web" : "https://github.com/miyagawa/Dist-Zilla-Plugin-Prereqs-FromCPANfile"
       }
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }
 

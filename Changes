@@ -1,7 +1,10 @@
 Revision history for Perl extension Dist::Zilla::Plugin::Prereqs::FromCPANfile
 
 {{$NEXT}}
+
+0.04  2013-03-23 21:38:56 PDT
         - Bump Dist::Zilla requirement to 4.2
+        - Convert to Milla
 
 0.03      2013-03-19 21:15:12 America/Los_Angeles
         - dzilifying this as a dogfood experiment
