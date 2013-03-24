@@ -1,6 +1,7 @@
 Revision history for Perl extension Dist::Zilla::Plugin::Prereqs::FromCPANfile
 
 {{$NEXT}}
+        - Bump Dist::Zilla requirement to 4.2
 
 0.03      2013-03-19 21:15:12 America/Los_Angeles
         - dzilifying this as a dogfood experiment
