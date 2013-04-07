@@ -4,7 +4,7 @@
       "Tatsuhiko Miyagawa <miyagawa@bulknews.net>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300031, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Milla version v1.0.0, Dist::Zilla version 4.300033, CPAN::Meta::Converter version 2.130880",
    "license" : [
       "perl_5"
    ],
@@ -13,10 +13,20 @@
       "version" : "2"
    },
    "name" : "Dist-Zilla-Plugin-Prereqs-FromCPANfile",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples"
+      ]
+   },
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.013"
+            "Module::Build::Tiny" : "0.014"
          }
       },
       "develop" : {
@@ -26,7 +36,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Dist::Zilla" : "4.200002",
+            "Dist::Zilla" : "4.300017",
             "Module::CPANfile" : "0.901",
             "Try::Tiny" : "0.1",
             "perl" : "5.008001"
@@ -50,6 +60,6 @@
          "web" : "https://github.com/miyagawa/Dist-Zilla-Plugin-Prereqs-FromCPANfile"
       }
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }
 
