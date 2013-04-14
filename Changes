@@ -2,6 +2,9 @@ Revision history for Perl extension Dist::Zilla::Plugin::Prereqs::FromCPANfile
 
 {{$NEXT}}
 
+0.06  2013-04-14 17:11:55 JST
+        - Support converting 'feature' to optional_features in META
+
 0.05  2013-04-06 21:50:44 PDT
         - Bump Dist::Zilla requirement for better version requirement support
           http://www.cpantesters.org/cpan/report/38e34ade-945b-11e2-acd0-a47bb3d0f147

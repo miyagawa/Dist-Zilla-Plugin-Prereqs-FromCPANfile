@@ -14,6 +14,9 @@ to read _cpanfile_ to determine prerequisites for your distribution. This
 does the __opposite of__ what [Dist::Zilla::Plugin::CPANFile](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::CPANFile) does, which
 is to _create_ a `cpanfile` using the prereqs collected elsewhere.
 
+When `feature` DSL is used in `cpanfile`, it will correctly be
+converted to `optional_features` in META data.
+
 __DO NOT USE THIS PLUGIN IN COMBINATION WITH Plugin::CPANFile__. You will
 probably be complained about creating duplicate files from dzil.
 
