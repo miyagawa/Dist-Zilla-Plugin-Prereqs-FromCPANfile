@@ -31,9 +31,6 @@ use Test::DZil;
         },
     };
 
-    ok $meta->{optional_features}{sqlite};
-    ok $meta->{optional_features}{fastcgi};
-
     is_deeply $meta->{optional_features}, {
         sqlite => {
             description => 'SQLite support',
