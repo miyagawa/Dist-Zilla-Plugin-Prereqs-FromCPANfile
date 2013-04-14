@@ -30,6 +30,32 @@ use Test::DZil;
             },
         },
     };
+
+    ok $meta->{optional_features}{sqlite};
+    ok $meta->{optional_features}{fastcgi};
+
+    is_deeply $meta->{optional_features}, {
+        sqlite => {
+            description => 'SQLite support',
+            prereqs => {
+                runtime => {
+                    requires => {
+                        'DBD::SQLite' => 0,
+                    },
+                },
+            },
+        },
+        fastcgi => {
+            description => 'fastcgi',
+            prereqs => {
+                test => {
+                    recommends => {
+                        'Test::FastCGI' => '1',
+                    },
+                },
+            },
+        }
+    };
 }
 
 done_testing;

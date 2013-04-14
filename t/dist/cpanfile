@@ -9,3 +9,9 @@ on test => sub {
 feature 'sqlite', 'SQLite support' => sub {
     requires 'DBD::SQLite';
 };
+
+feature 'fastcgi' => sub {
+    on test => sub {
+        recommends 'Test::FastCGI', '1';
+    };
+};
