@@ -25,6 +25,9 @@ use Test::DZil;
             requires => {
                 'Test::More' => '0.90',
             },
+            recommends => {
+                'Test::TCP' => '0.2',
+            },
         },
     };
 }
