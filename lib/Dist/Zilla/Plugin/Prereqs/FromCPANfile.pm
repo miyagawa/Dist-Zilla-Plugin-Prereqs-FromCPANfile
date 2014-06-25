@@ -3,7 +3,6 @@ package Dist::Zilla::Plugin::Prereqs::FromCPANfile;
 use strict;
 our $VERSION = '0.06';
 
-use Module::CPANfile;
 use Try::Tiny;
 use Moose;
 with 'Dist::Zilla::Role::PrereqSource', 'Dist::Zilla::Role::MetaProvider';
@@ -12,6 +11,8 @@ sub cpanfile {
     my $self = shift;
 
     return unless -e 'cpanfile';
+
+    require Module::CPANfile;
 
     try {
         $self->log("Parsing 'cpanfile' to extract prereqs");
