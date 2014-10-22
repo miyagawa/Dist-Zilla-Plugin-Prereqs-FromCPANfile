@@ -2,6 +2,9 @@ Revision history for Perl extension Dist::Zilla::Plugin::Prereqs::FromCPANfile
 
 {{$NEXT}}
 
+0.07  2014-10-22 09:10:09 PDT
+        - Do not attempt to parse cpanfile multiple times. #2
+
 0.06  2013-04-14 17:11:55 JST
         - Support converting 'feature' to optional_features in META
 
