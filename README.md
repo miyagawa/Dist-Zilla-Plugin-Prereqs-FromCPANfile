@@ -9,15 +9,15 @@ Dist::Zilla::Plugin::Prereqs::FromCPANfile - Parse cpanfile for prereqs
 
 # DESCRIPTION
 
-Dist::Zilla::Plugin::Prereqs::FromCPANfile is a [Dist::Zilla](http://search.cpan.org/perldoc?Dist::Zilla) plugin
+Dist::Zilla::Plugin::Prereqs::FromCPANfile is a [Dist::Zilla](https://metacpan.org/pod/Dist::Zilla) plugin
 to read _cpanfile_ to determine prerequisites for your distribution. This
-does the __opposite of__ what [Dist::Zilla::Plugin::CPANFile](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::CPANFile) does, which
+does the **opposite of** what [Dist::Zilla::Plugin::CPANFile](https://metacpan.org/pod/Dist::Zilla::Plugin::CPANFile) does, which
 is to _create_ a `cpanfile` using the prereqs collected elsewhere.
 
 When `feature` DSL is used in `cpanfile`, it will correctly be
 converted to `optional_features` in META data.
 
-__DO NOT USE THIS PLUGIN IN COMBINATION WITH Plugin::CPANFile__. You will
+**DO NOT USE THIS PLUGIN IN COMBINATION WITH Plugin::CPANFile**. You will
 probably be complained about creating duplicate files from dzil.
 
 # AUTHOR
@@ -35,4 +35,4 @@ it under the same terms as Perl itself.
 
 # SEE ALSO
 
-[Module::CPANfile](http://search.cpan.org/perldoc?Module::CPANfile)
+[Module::CPANfile](https://metacpan.org/pod/Module::CPANfile)
