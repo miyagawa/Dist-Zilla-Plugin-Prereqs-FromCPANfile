@@ -11,8 +11,7 @@ use Test::DZil;
     );
     $tzil->build;
 
-    my $json = $tzil->slurp_file('build/META.json');
-    my $meta = JSON->new->decode($json);
+    my $meta = $tzil->distmeta;
 
     is_deeply $meta->{prereqs}, {
         runtime => {
