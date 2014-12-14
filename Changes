@@ -2,6 +2,9 @@ Revision history for Perl extension Dist::Zilla::Plugin::Prereqs::FromCPANfile
 
 {{$NEXT}}
 
+0.08  2014-12-14 12:36:40 PST
+        - Fixed test (ether) #3
+
 0.07  2014-10-22 09:10:09 PDT
         - Do not attempt to parse cpanfile multiple times. #2
 
