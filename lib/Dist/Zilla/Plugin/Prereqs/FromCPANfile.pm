@@ -89,6 +89,43 @@ converted to C<optional_features> in META data.
 B<DO NOT USE THIS PLUGIN IN COMBINATION WITH Plugin::CPANFile>. You will
 probably be complained about creating duplicate files from dzil.
 
+=head1 MIGRATION
+
+If you are migrating an existing Dist::Zilla configuration to be using
+and F<cpanfile> and this plugin, you can do the following to ease the
+proces and let L<Dist::Zilla> auto-generate your initial F<cpanfile> so you do
+not have to write it by hand.
+
+Add the following line to your F<dist.ini>
+
+    # dist.ini
+    [CPANFile]
+
+Using L<Dist::Zilla::Plugin::CPANFile>, which is included with L<Dist::Zilla> we
+can now generate the F<cpanfile> based on the prerequisites specified in F<dist.ini>.
+
+    # build
+    $ dzil build
+
+    # copy the newly generate cpanfile
+    $ cp <distribution build dir>/cpanfile .
+
+    # change the line in your dist.ini from:
+    [CPANFile]
+
+    # to:
+    [Prereqs::FromCPANfile]
+
+Now you have auto-generated F<cpanfile> and you can delete the prerequisites
+sections from your F<dist.ini> and your prerequisites are now listed in your
+F<cpanfile> and can be maintained here.
+
+Using the newly generated F<cpanfile>, of course requires the installation of this
+plugin.
+
+As previously noted the two plugins are not meant to be used at the same time, but
+for this initial migration they can supplement each other.
+
 =head1 AUTHOR
 
 Tatsuhiko Miyagawa E<lt>miyagawa@bulknews.netE<gt>
@@ -105,5 +142,9 @@ it under the same terms as Perl itself.
 =head1 SEE ALSO
 
 L<Module::CPANfile>
+
+L<Dist::Zilla>
+
+L<Dist::Zilla::Plugin::CPANFile>
 
 =cut
