@@ -31,6 +31,12 @@ sub register_prereqs {
     my $prereqs = $cpanfile->prereq_specs;
     for my $phase (keys %$prereqs) {
         for my $type (keys %{$prereqs->{$phase}}) {
+            my $module_name = [keys %{$prereqs->{$phase}->{$type}}]->[0];
+            my $module_with_version = $prereqs->{$phase}->{$type}->{$module_name};
+            if ($module_with_version =~ m#^([<>=]{2}) ([0-9.]+)$#) {
+                # This looks like a carton cpanfile
+                $prereqs->{$phase}->{$type}->{$module_name} = $2;
+            }
             $self->zilla->register_prereqs(
                 { type => $type, phase => $phase },
                 %{$prereqs->{$phase}{$type}},
