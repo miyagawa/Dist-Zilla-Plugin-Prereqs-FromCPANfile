@@ -1,7 +1,7 @@
 package Dist::Zilla::Plugin::Prereqs::FromCPANfile;
 
 use strict;
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 use Module::CPANfile;
 use Try::Tiny;
@@ -32,10 +32,11 @@ sub register_prereqs {
     for my $phase (keys %$prereqs) {
         for my $type (keys %{$prereqs->{$phase}}) {
             my $module_name = [keys %{$prereqs->{$phase}->{$type}}]->[0];
-            my $module_with_version = $prereqs->{$phase}->{$type}->{$module_name};
-            if ($module_with_version =~ m#^([<>=]{2}) ([0-9.]+)$#) {
-                # This looks like a carton cpanfile
-                $prereqs->{$phase}->{$type}->{$module_name} = $2;
+            my $module_version = $prereqs->{$phase}->{$type}->{$module_name};
+            my @version_split = split(/\s+/,$module_version);
+            if (scalar(@version_split) > 1) {
+                # This file has additional operation notation, use the right hand side
+                $prereqs->{$phase}->{$type}->{$module_name} = $version_split->[-1];
             }
             $self->zilla->register_prereqs(
                 { type => $type, phase => $phase },
