@@ -36,7 +36,7 @@ sub register_prereqs {
             my @version_split = split(/\s+/,$module_version);
             if (scalar(@version_split) > 1) {
                 # This file has additional operation notation, use the right hand side
-                $prereqs->{$phase}->{$type}->{$module_name} = $version_split->[-1];
+                $prereqs->{$phase}->{$type}->{$module_name} = $version_split[-1];
             }
             $self->zilla->register_prereqs(
                 { type => $type, phase => $phase },
